@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 int ft_recursive_factorial(int nb)
 {
 	if (nb == 1)
@@ -26,12 +24,4 @@ int ft_recursive_factorial(int nb)
 	{
 		return nb * ft_recursive_factorial(nb - 1);
 	}
-}
-
-int	main()
-{
-	int num = -3;
-	int fact = ft_recursive_factorial(num);
-	printf("%d", fact);
-	return 0;
 }
